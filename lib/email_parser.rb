@@ -14,7 +14,10 @@ class EmailAddressParser
     parsed = []
     if @email.include? ","
       @email.split(", ").uniq
+    elsif
+      @email.split(" ").uniq
     else
+      @email.split(", ").uniq
       @email.split(" ").uniq
     end
   end
