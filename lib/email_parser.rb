@@ -11,6 +11,6 @@ class EmailAddressParser
   end
 
   def parse(email)
-    array = email.split(", ")
+    array = email.split("\n")
   end
 end
