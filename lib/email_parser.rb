@@ -10,8 +10,7 @@ class EmailAddressParser
     @email = email
   end
 
-  def parse(email)
-    array = []
-    array << @email.split(/[,]/)
+  def parse
+    array = @email.split(/[,]/)
   end
 end
