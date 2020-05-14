@@ -11,6 +11,10 @@ class EmailAddressParser
   end
 
   def parse
-    array = @email.split(", ").uniq || @email.split(" ").uniq
+    parsed = []
+    if @email.include? ","
+      @email.split(", ").uniq
+    elsif @email.include? " "
+      @email.split(" ").uniq
   end
 end
