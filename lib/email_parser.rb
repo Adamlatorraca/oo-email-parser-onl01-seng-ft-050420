@@ -14,7 +14,7 @@ class EmailAddressParser
     parsed = []
     if @email.include? ","
       @email.split(", ").uniq
-    elsif @email.include? " "
+    else
       @email.split(" ").uniq
     end
   end
